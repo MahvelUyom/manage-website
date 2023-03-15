@@ -1,0 +1,342 @@
+*{
+    font-family:sans-serif ;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+}
+  
+
+body{
+    background: url("bg-tablet-pattern.svg");
+    background-size: contain;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    background:#fff;
+    /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); */
+    padding:.9rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: serif;
+    color:var(--purple);
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color:var(--purple);
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color:black;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.reverse{
+    display: flex;
+}
+.intro{
+    margin: 20rem 4rem;
+    text-align: center;
+}
+.intro h1{
+    font-size: 3rem;
+}
+.intro p{
+    margin-top: 1rem;
+    font-size: 1.9rem;
+}
+.intro .text{
+    margin-top: 3rem;
+    padding: 8rem;
+}
+.intro img{
+    width: 50rem;
+}
+.start{
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    background: rgb(245, 107, 57);
+}
+.none{
+    margin-top: 0;
+}
+
+.different{
+    text-align: center;
+    margin:20rem 4rem;
+}
+.different .text{
+    margin-top: 4rem;
+}
+.different h2{
+    font-size: 4rem;
+}
+.different .text p{
+    margin-top: 2rem;
+    font-size: 2rem;
+    line-height: 3.8rem;
+}
+.different .numbered{
+    margin-top: 2rem;
+}
+.different span{
+    margin-right: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight:700 ;
+    color: white;
+    border-radius: 30px;
+    background:rgb(245, 107, 57) ;
+}
+.different h3{
+    margin-top:2rem;
+}
+.different .numbered p{
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+.testimony{
+    text-align: center;
+    margin:20rem 4rem;
+}
+.testimony h2{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+.testify{
+    padding: 2rem;
+    background: rgb(226, 223, 223);
+    margin:1rem;
+    border-radius: 2px;
+}
+.testify img{
+    width: 4rem;
+   margin-top: -5rem;
+}
+.testify h4{
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+.simplify{
+    margin-top:10rem ;
+    padding: 4rem;
+    background: rgb(245, 107, 57);
+    background-size: contain;
+}
+.simplify h2{
+    font-size: 3rem;
+}
+.simplify button{
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    margin-left: 30rem;
+    border-radius: 30px;
+    color: rgb(245, 107, 57);
+    font-weight: 700;
+    background:whitesmoke ;
+    
+}
+footer{
+    background: rgb(18, 18, 71);
+    padding: 4rem;
+    margin-top: 4rem;
+}
+.sign-up{
+    margin-left: 30rem;
+}
+footer input{
+
+    padding: 1rem 2rem;
+    border-radius: 60px;
+    font-size: 2rem;
+}
+.links{
+    margin:0 2rem;
+   
+}
+.links a{
+    display: block;
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: white;
+}
+.socials{
+    margin-top: 4rem;
+}
+.socials img{
+    margin: 1rem 2rem;
+}
+.go{
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    border-radius: 30px;
+    color:white ;
+    font-weight: 700;
+    background:rgb(245, 107, 57) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+  
+  header .navbar{
+        position: absolute;
+        top:100%; left: 0;
+        width:100%;
+        background:whitesmoke;
+        padding:1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+
+     }
+   
+    header .navbar a{
+        display: block;
+        margin:2rem 0;
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: rgb(8, 8, 66);
+        margin-top: 3.2rem;
+    }
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content:'\f00d';
+    }
+    .none{
+        display: none;
+    }
+    .intro-flex, .footer-flex{
+        flex-direction: column-reverse;
+    }
+    .reverse:not(.intro-flex, .simplify-flex, .footer-flex){
+        flex-direction: column;
+    }
+    .intro .text{
+        margin-top: 3rem;
+        padding: 0;
+        margin-left: 3rem;
+    }
+    .simplify button{
+        margin-left: 1rem;
+    }
+
+    footer input{
+        width: 70%;
+    }
+    .links{
+        margin: 3rem 0;
+    }
+    .sign-up{
+        margin-left: 0;
+    }
+   
+    /* .different h3{
+        background: rgb(237, 170, 146);
+        margin:0 25rem;
+        padding: .9rem;
+        border-radius: 60px;
+    } */
+}
+
+@media (max-width:405px) {
+    .simplify{
+        background: white;
+        color: rgb(245, 107, 57);
+    }
+    .simplify button{
+        background: rgb(245, 107, 57);
+        color: white;
+    }
+    footer{
+        background: none;
+    }
+    .links a{
+        color: midnightblue;
+        font-weight: 700;
+    }
+    input{
+        border: 1px solid midnightblue;
+    }
+    .socials{
+        background: midnightblue;
+        padding: 2rem 6rem;
+        border-radius: 30px;
+    }
+}
