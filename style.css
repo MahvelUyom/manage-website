@@ -261,7 +261,9 @@ footer input{
         transition: .2s linear;
 
      }
-   
+       .intro img{
+        width: 40rem;
+    }
     header .navbar a{
         display: block;
         margin:2rem 0;
