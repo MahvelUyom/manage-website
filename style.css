@@ -341,4 +341,7 @@ footer input{
         padding: 2rem 6rem;
         border-radius: 30px;
     }
+      .socials img{
+        margin: 1rem;
+    }
 }
